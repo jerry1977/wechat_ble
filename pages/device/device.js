@@ -54,8 +54,8 @@ Page({
       console.log("send:",dataView);
       wx.writeBLECharacteristicValue({
         deviceId: that.data.connectedDeviceId,
-        serviceId: '0783B03E-8535-B5A0-7140-A304D2495CB7',
-        characteristicId: '0783B03E-8535-B5A0-7140-A304D2495CBA',
+        serviceId: '6e400001-b5a3-f393-e0a9-e50e24dcca9e',
+        characteristicId: '6e400002-b5a3-f393-e0a9-e50e24dcca9e',
         value: buffer,
         success: function (res) {
           console.log('发送成功')
@@ -101,8 +101,8 @@ Page({
             wx.notifyBLECharacteristicValueChange({
               state: true,
               deviceId: options.connectedDeviceId,
-              serviceId: '0783B03E-8535-B5A0-7140-A304D2495CB7',
-              characteristicId: '0783B03E-8535-B5A0-7140-A304D2495CB8',
+              serviceId: '6e400001-b5a3-f393-e0a9-e50e24dcca9e',
+              characteristicId: '6e400003-b5a3-f393-e0a9-e50e24dcca9e',
               success: function (res) {
                 console.log('启用notify成功')
               }

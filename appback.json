@@ -11,6 +11,18 @@
     "backgroundColor": "#f8f8f8"
   },
   "sitemapLocation": "sitemap.json",
+"tabBar": {
+  "list": [
+    {
+      "pagePath": "pages/search/search",
+      "text": "搜索"
+    },
+    {
+      "pagePath": "pages/device/device",
+      "text": "设备"
+    }
+  ]
+},
 "networkTimeout": {
   "request": 10000,
   "downloadFile": 10000

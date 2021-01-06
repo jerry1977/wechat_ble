@@ -1,20 +1,22 @@
 {
   "pages": [
+
     "pages/search/search",
-    "pages/device/device"
+    "pages/device/device",
+    "pages/index/index"
+  
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#f8f8f8",
-    "navigationBarTitleText": "BLE TOOLS",
+    "navigationBarTitleText": "电瓶车充电器demo",
     "navigationBarTextStyle": "black",
     "backgroundColor": "#f8f8f8"
   },
   "sitemapLocation": "sitemap.json",
-"networkTimeout": {
-  "request": 10000,
-  "downloadFile": 10000
-},
-"debug": true
-
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }

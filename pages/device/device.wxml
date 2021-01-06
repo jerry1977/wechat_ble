@@ -3,14 +3,27 @@
   <text style="font-size:x-small;color:gray;word-break:break-all">设备ID：{{connectedDeviceId}}</text>
   <text style="font-size:x-small;color:gray">状态：{{connected?"已连接":"已断开"}}</text>
   <view class="layout_horizontal">
-      <button type="primary" class="button" bindtap="Send10">10分钟</button>
-      <button type="primary" class="button" bindtap="Send30">30分钟</button>
-      <button type="primary" class="button" bindtap="Send60">1小时</button>
+        <button type="primary" class="button" bindtap="Send40">2小时（断开不计时超时停充）</button>
   </view>
+  <view class="layout_horizontal">
+      <button type="primary" class="button" bindtap="Send40_goon">2小时（断开计时）</button>
+  </view>
+  <view class="layout_horizontal">
+      <button type="primary" class="button" bindtap="wxauth">认证</button>
+      <button type="primary" class="button" bindtap="getrecord">充电记录</button>
+  </view>
+   <view class="layout_horizontal">
+      <button type="primary" class="button" bindtap="getcurstatus">当前状态</button>
+      <button type="primary" class="button" bindtap="chargeover">结束充电</button>
+      <button type="primary" class="button" bindtap="getver">软硬件版本</button>
+  </view>
+
     <text style="font-size:medium;margin-top:10px">发送内容：</text>
-    <input class="input" value="{{inputText}}" bindinput="bindInput" maxlength="20"/>
+    <textarea class="input" value="{{inputText}}" bindinput="bindInput" maxlength="200"/>
     <text style="font-size:medium;margin-top:10px">接收内容：</text>
-    <input class="input" disabled value="{{receiveText}}" maxlength="20"/>
+    <textarea class="input" disabled value="{{receiveText}}" maxlength="600"/>
+     <button type="primary" class="button" bindtap="clear_receive">清空接收</button>
+    <!-- <textarea class="detailText"     placeholder=""    bindblur=""    value="{{receiveText}}"></textarea> -->
     <button type="primary" class="button" bindtap="Send">发送</button>
 
 </view>
